@@ -367,7 +367,7 @@ async function shareResult(){
  const feedback=document.getElementById('shareStatus');
  const fallback=document.getElementById('shareFallback');
  feedback.textContent='';fallback.hidden=true;
- const resultToShare=dailyResultText+'\n\nhttps://cd2st.github.io/ColorForm/';
+ const resultToShare=dailyResultText+'\n\nhttps://cd2st.github.io/ColorForm/?share=2';
  try{
    if(!navigator.clipboard)throw new Error('Clipboard unavailable');
    await navigator.clipboard.writeText(resultToShare);
